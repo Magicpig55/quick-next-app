@@ -5,10 +5,20 @@
     place-items: center;
 }
 
+.hcenter {
+    display: flex;
+    place-content: center;
+    height: 100%;
+}
+
 .bigger-text {
     font-size: 3rem;
 }
 
 .main-text {
     font-size: 1.6rem;
+}
+
+.fullheight {
+    height: 100%;
 }

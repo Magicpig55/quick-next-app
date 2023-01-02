@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Link from "next/link";
 import Navbar from "./navbar";
 import { ReactNode } from "react";
 import Main from "../styles/main.module.scss"
@@ -20,7 +19,7 @@ export default function Layout({children}: Props) {
                 <Navbar />
             </header>
         </header>
-        <div className={`${Misc.center} ${Misc['main-text']}`}>
+        <div className={`${Misc.hcenter} ${Misc['main-text']}`}>
             <main className={Main.main}>
                 {children}
             </main>

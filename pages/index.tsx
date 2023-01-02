@@ -3,7 +3,7 @@ import Misc from '../styles/misc.module.scss'
 export default function Home() {
     return (
         <>
-            <article className={Misc.center}>
+            <article>
                 <h1>
                     Myaggic (but a nextjs website)
                 </h1>
