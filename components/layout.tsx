@@ -1,10 +1,12 @@
 import Head from "next/head";
 import Link from "next/link";
 import Navbar from "./navbar";
-import React, { ComponentProps } from "react";
+import { ReactNode } from "react";
+import Main from "../styles/main.module.scss"
+import Misc from '../styles/misc.module.scss'
 
 type Props = {
-    children?: React.ReactNode
+    children?: ReactNode
 }
 export default function Layout({children}: Props) {
     return (<>
@@ -18,8 +20,10 @@ export default function Layout({children}: Props) {
                 <Navbar />
             </header>
         </header>
-        <main>
-            {children}
-        </main>
+        <div className={`${Misc.center} ${Misc['main-text']}`}>
+            <main className={Main.main}>
+                {children}
+            </main>
+        </div>
     </>)
 } 
