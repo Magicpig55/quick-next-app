@@ -15,7 +15,7 @@ export default function Contact() {
         const data = JSON.stringify({email, radioValue});
 
         // Submit
-        const res = await (await fetch('/api/form-submit', {method: "POST", body: data})).text();
+        const res = await (await fetch(`/api/form-submit`, {method: "POST", body: data})).text();
 
         // Cool, don't care about the response so let's just display it
         console.log(`Server returned a response: ${res}`);
